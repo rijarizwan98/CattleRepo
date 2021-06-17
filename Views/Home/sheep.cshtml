@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html>
+
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+  
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+
+/* Change styles for span and cancel button on extra small screens */
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+
+.column {
+  float:left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+  .column {
+              max-width: 450px;
+    width: 100%;
+    display: block;
+  }
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+
+<body id="myPage">
+
+  <div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="../../Home/ex" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Butcher</a>
+  <a href="../../Home/history" class="w3-bar-item w3-button w3-hide-small w3-hover-white" onclick="openForm()">History</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications"> Shop <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="../../Home/butcher" class="w3-bar-item w3-button">Bakra</a>
+      <a href="../../Home/camel" class="w3-bar-item w3-button">Camel</a>
+      <a href="../../Home/bull" class="w3-bar-item w3-button">Bull</a>
+      <a href="../../Home/buffalo" class="w3-bar-item w3-button">Buffalo</a>
+      <a href="../../Home/sheep" class="w3-bar-item w3-button">Sheep</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Cart"><i class="fa fa-shopping-cart"></i></a>
+       <a href="#cancel" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CancelOrder</a>
+ </div>
+
+
+<br>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/content/2.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Sheep id 1</h2>
+        <p>Click the button below to open details.</p>
+        <a href="../../Home/S1" class="button">View Details</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="/content/3.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Sheep id 2</h2>
+        <p>Click the button below to open details.</p>
+        <a href="../../Home/S2" class="button">View Details</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="/content/6.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Sheep id 3</h2>
+        <p>Click the button below to open details.</p>
+        <a href="../../Home/S3" class="button">View Details</a>
+      </div>
+    </div>
+  </div>
+
+    
+
+    
+</div>
+
+
+    
+
+
+</body>
+</html>

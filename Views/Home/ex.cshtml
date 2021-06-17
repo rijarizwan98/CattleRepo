@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+    <div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="../../Home/ex" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Butcher</a>
+  <a href="#delivery" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Delivery</a>
+  <a href="../../Home/history" class="w3-bar-item w3-button w3-hide-small w3-hover-white" onclick="openForm()">History</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications"> Shop <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+     <a href="#" class="w3-bar-item w3-button">Bakra</a>
+      <a href="#" class="w3-bar-item w3-button">Camel</a>
+      <a href="#" class="w3-bar-item w3-button">Bull</a>
+      <a href="#" class="w3-bar-item w3-button">Buffalo</a>
+      <a href="#" class="w3-bar-item w3-button">Sheep</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+</div>
+
+
+<div class="w3-row-padding w3-padding-64 w3-theme-l1">
+
+<div class="w3-quarter">
+<h2>Our butchers availability to you for better experience</h2>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="/content/6.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>Muhammad Ismail</h3>
+  <h4>Rate per goat: Rs.3000</h4>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="/content/3.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Ahmed Chaudhry</h3>
+  <h4>Rate per camel: Rs.10,000</h4>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="/content/2.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>Ali Khan</h3>
+  <h4>Rate per sheep: Rs.3000</h4>
+  </div>
+  </div>
+</div>
+
+    <div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="/content/2.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>Kamal Shah</h3>
+  <h4>Rate per buffalo is: Rs.5000</h4>
+  </div>
+  </div>
+</div>
+
+    
+
+</div>
+
+    <div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+    <script>
+
+    function openForm()
+    {
+       document.getElementById("history");
+    }
+// Script for side navigation
+
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
